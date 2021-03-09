@@ -12,9 +12,13 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+       python-version: 3.8
     - name: Fetch latest question
-      run: |-
-        curl https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data | jq . > incidents.json
+      run: |
+        python question.py  
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
