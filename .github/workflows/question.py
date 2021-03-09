@@ -69,7 +69,7 @@ def get_detail():
         questions = q_detailspage_html.find_all("h4")
         options = q_detailspage_html.find_all("ul")
         get_question(questions,options,question_list,expertise)
-        with open(r'C:\Users\HP\Desktop\chiku\linkedin-skill-assessments-quizzes-master\django\store_file1.yaml', 'w') as file:
+        with open(r'question.yaml', 'w') as file:
             documents = yaml.dump(question_list, file)
         
             
