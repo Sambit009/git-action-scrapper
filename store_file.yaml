@@ -2349,7 +2349,10 @@
     on TCP ports 3380-3384, 3386-3388, and 3390. The Inbound tab below shows three
     incoming security group policies attached to this instance. Which policy should
     you use?
-- expertise: Aws
+- correct_answer: The rule that exposes TCP ports 3380-3390 would also publicly expose
+    port 3389 (RDP) to the entire internet. Write separate rules to only expose the
+    needed ports.
+  expertise: Aws
   option_1: The rule that exposes TCP ports 3380-3390 would also publicly expose port
     3389 (RDP) to the entire internet. Write separate rules to only expose the needed
     ports.
@@ -2404,8 +2407,10 @@
     the primary server becomes the master server again.
   question: What is the best practice for creating a highly available PostgreSQL database
     in RDS that can sustain the loss of a single AWS region?
-- correct_answer: Create Read Replicas in other AWS regions. You can designate a new
-    master database from any of the read replicas until the regional failure is resolved.
+- correct_answer: Create Read Replicas in other AWS regions. Ensure read operations
+    against the database occur on an available Read Replica, and send write operations
+    to another region if you need to promote a Read Replica to a standalone database
+    if the master is down.
   expertise: Aws
   option_1: PostgreSQL cannot be replicated across regions. Restore the database backups
     from an S3 bucket and repoint your database connections to the new instance.
@@ -2421,8 +2426,9 @@
   question: You created a new Linux EC2 instance and installed PostgreSQL but you
     are not able to establish a connection to the server from your local computer.
     What steps do you take to resolve this issue?
-- correct_answer: Create a security group rule that allows all traffic from 0.0.0.0/0.
-    This will verify whether or not another rule is denying the traffic.
+- correct_answer: Verify that the assigned security groups allow traffic from your
+    IP address to port 5432. Verify that PostgreSQL is configured to listen to external
+    traffic and is bound to the public interface.
   expertise: Aws
   option_1: Create a security group rule that allows all traffic from 0.0.0.0/0. This
     will verify whether or not another rule is denying the traffic.
@@ -2466,8 +2472,8 @@
     a developer group you already created for the other developers.
   question: When launching an EC2 instance with an instance type that supports instance
     storage, what use case is best for instance storage?
-- correct_answer: Instance storage is faster than EBS volumes, so install the root
-    of the operating system on this volume to speed up server performance.
+- correct_answer: Use the instance storage to serve temporary files that require low
+    I/O latency.
   expertise: Aws
   option_1: Use the instance storage to serve temporary files that require low I/O
     latency.
@@ -2481,8 +2487,9 @@
   question: "What\u2019s the best practice for horizontally scaling a legacy ASP.NET\
     \ web application that relies on Active Directory and is currently deployed to\
     \ a single Windows EC2 instance?"
-- correct_answer: Create a clone of the server using an AMI image and user Application
-    Load Balancer to balance the traffic between both instances using sticky sessions.
+- correct_answer: Use Sysprep to shut down the instance during a maintenance window.
+    Create an AMI image and place both servers behind Application Load Balancer with
+    sticky sessions.
   expertise: Aws
   option_1: Use Sysprep to shut down the instance during a maintenance window. Create
     an AMI image and place both servers behind Application Load Balancer with sticky
@@ -2534,8 +2541,8 @@
   option_4: An Http POST query string of ? action=createuser can be routed to a target
     group for an ECS service.
   question: What does a VPC do?
-- correct_answer: creates a private network that is completely isolated from the public
-    internet.
+- correct_answer: creates a cloud-based network to interconnect a set of virtual servers
+    and appliances
   expertise: Aws
   option_1: creates a cloud-based network to interconnect a set of virtual servers
     and appliances
@@ -2554,8 +2561,8 @@
     the IP address.
   question: Where is the best place to store database backups on an EC2 instance that
     is configured as a database server?
-- correct_answer: instance storage, with a script that replicates the database backups
-    to another instance in a different availability zone.
+- correct_answer: an S3 bucket, synced with the database backups via a script that
+    calls the AWS CLI
   expertise: Aws
   option_1: an S3 bucket, synced with the database backups via a script that calls
     the AWS CLI
@@ -2607,14 +2614,16 @@
   option_2: Use CloudWatch to put monitors on the remaining CPU credits. If you run
     out of CPU credit the instance will be stopped.
   question: Which feature can be used to respond to a sudden increase in web traffic?
-- expertise: Aws
+- correct_answer: all of these answers
+  expertise: Aws
   option_1: EC2 Auto Scaling groups
   option_2: AWS Shield Advanced
   option_3: RDS Read Replicas
   option_4: all of these answers
   question: If a set of servers are located within a private subnet of your VPC, how
     can you connect those servers to on-premise servers?
-- expertise: Aws
+- correct_answer: All of these options can establish a connection to a private subnet.
+  expertise: Aws
   option_1: Establish a connection with AWS Direct Connect.
   option_2: Use the AWS Client VPN.
   option_3: Install a OpenVPN server on an instance that is located within the subnet
@@ -2641,7 +2650,8 @@
   question: Your application is sending 50,000 emails through SES each day. Since
     you must maintain a low bounce rate to avoid being put on probation, what simple
     system do you architect to automatically process hard bounces?
-- expertise: Aws
+- correct_answer: All of these services can host a Docker container.
+  expertise: Aws
   option_1: Lightsail
   option_2: Elastic Container Service (ECS)
   option_3: Elastic Compute Cloud (EC2)
@@ -2650,7 +2660,10 @@
     foreign IP addresses. Your business is operating in only a few countries and you
     would like to block any other traffic. What is the best practice for limiting
     access to your web application by country?
-- expertise: Aws
+- correct_answer: All objects within this bucket are assigned public access and could
+    be readable or writable by anyone on the internet. Ensure no sensitive data is
+    being publicly shared within this bucket.
+  expertise: Aws
   option_1: All objects within this bucket are assigned public access and could be
     readable or writable by anyone on the internet. Ensure no sensitive data is being
     publicly shared within this bucket.
@@ -2664,7 +2677,8 @@
     permissions on any object.
   question: What is the best practice for maintaining Windows EC2 instances and applying
     updates?
-- expertise: Aws
+- correct_answer: Delete the AWS account.
+  expertise: Aws
   option_1: Revoke the AdministratorAccess role or grant it to another IAM user.
   option_2: Create a new hosted zone in Route 53.
   option_3: Delete the AWS account.
@@ -7918,7 +7932,7 @@
   option_2: => {}
   option_3: => { return {};}
   option_4: => (({}))
-  question: What will be logged to the console?
+  question: Which method do you use to attach one DOM node to another?
 - correct_answer: to ensure that tasks further down in your code are not initiated
     until earlier tasks have completed
   expertise: Javascript
@@ -7928,36 +7942,44 @@
     earlier tasks have completed
   option_3: to make your code faster
   option_4: to ensure that the call stack maintains a LIFO (Last in, First Out) structure
-  question: Which method do you use to attach one DOM node to another?
+  question: Which statement is used to skip iteration of the loop?
 - correct_answer: "3 == \u20183\u2019"
   expertise: Javascript
   option_1: '[3] == [3]'
   option_2: "3 == \u20183\u2019"
   option_3: "3 != \u20183\u2019"
   option_4: "3 === \u20183\u2019"
-  question: Which statement is used to skip iteration of the loop?
+  question: Which choice is valid example for an arrow function?
 - correct_answer: firstName
   expertise: Javascript
   option_1: 5thItem
   option_2: firstName
   option_3: grand total
   option_4: function
-  question: Which choice is valid example for an arrow function?
+  question: Which concept is defined as a template that can be used to generate different
+    objects that share some shape and/or behavior?
 - correct_answer: preventDefault()
   expertise: Javascript
   option_1: cancel()
   option_2: stop()
   option_3: preventDefault()
   option_4: prevent()
-  question: Which concept is defined as a template that can be used to generate different
-    objects that share some shape and/or behavior?
-- correct_answer: '101'
-  expertise: Javascript
-  option_1: '101'
-  option_2: '4'
-  option_3: '100'
-  option_4: '3'
   question: How do you add a comment to JavaScript code?
+- correct_answer: appendChild()
+  expertise: Javascript
+  option_1: attachNode()
+  option_2: getNode()
+  option_3: querySelector()
+  option_4: appendChild()
+  question: If you attempt to call a value as a function but the value is not a function,
+    what kind of error would you get?
+- correct_answer: continue
+  expertise: Javascript
+  option_1: break
+  option_2: pass
+  option_3: skip
+  option_4: continue
+  question: Which method is called automatically when an object is initialized?
 - expertise: Jquery
   question: "What\u2019s the difference between these two snippets?"
 - correct_answer: Nothing .click(function) is shorter way to write .on('click', function).
@@ -11716,7 +11738,8 @@
   question: Your company hosts a web application that uses Azure SQL Database to store
     data. You need to implement measures that allow only members of the managers group
     to see sensitive information. Which two actions should you perform?
-- expertise: Microsoft-azure
+- correct_answer: Implement dynamic data masking and exclude the managers group.
+  expertise: Microsoft-azure
   option_1: Implement dynamic data masking and include the managers group.
   option_2: Implement transparent data encryption and include the managers group.
   option_3: Implement dynamic data masking and exclude the managers group.
