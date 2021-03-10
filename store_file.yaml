@@ -4224,6 +4224,28 @@
   option_4: "by using a standard font-face CSS definition sourcing a font file on\
     \ Google\u2019s servers"
   question: How do you add Google fonts to your project?
+- correct_answer: 'color: 000000;'
+  expertise: Css
+  option_1: 'color: #000;'
+  option_2: 'color: rgb(0,0,0);'
+  option_3: 'color: #000000;'
+  option_4: 'color: 000000;'
+  question: which choice is not a valid color?
+- expertise: Css
+  option_1: The .rem will be equivalent to 25px; the .em value will be 20px.
+  option_2: The .rem will be equivalent to 15px; the .em value will be 20px.
+  option_3: The .rem will be equivalent to 15px; the .em value will be 40px.
+  option_4: The .rem will be equivalent to 20px; the .em value will be 40px.
+  question: Using the following HTML and CSS example, what will equivalent pixel value
+    be for .em and .rem elements?
+- correct_answer: yellow
+  expertise: Css
+  option_1: blue
+  option_2: red
+  option_3: yellow
+  option_4: green
+  question: In this example, according to cascading and specificity rules, what color
+    will the link be?
 - expertise: Django
   question: To cache your entire site for an application in Django, you add all except
     which of these settings?
@@ -16703,6 +16725,21 @@
   option_4: Add items to a stack in O(n) time and remove items from a stack on O(n)
     time.
   question: What does calling namedtuple on a collection type return?
+- correct_answer: a tuple subclass with iterable named fields
+  expertise: Python
+  option_1: a tuple subclass with iterable named fields
+  option_2: a generic object class with non-iterable named fields
+  option_3: a generic object class with iterable parameter fields
+  option_4: a tuple subclass with non-iterable parameter fields
+  question: Which statement accurately describes how items are added to and remnoved
+    from a stack?
+- expertise: Python
+  option_1: a stacks adds items to one side and removes items from the other side.
+  option_2: a stacks adds items to the top and removes items from the top.
+  option_3: a stacks adds items to the top and removes items from anywhere in the
+    stack.
+  option_4: a stacks adds items to either end and removes items from either end.
+  question: what is a base case in a recursive function?
 - expertise: Quickbooks
   question: How can you track sick and vacation time in QuickBooks?
 - expertise: Quickbooks
