@@ -7525,17 +7525,22 @@
   option_2: var student = construct Person;
   option_3: var student = Person();
   option_4: var student = construct Person();
-  question: When would the final statement in the code shown be logged to the console?
+  question: "Which statement creates a new Person object called \u201Cstudent\u201D\
+    ?"
 - correct_answer: immediately
   expertise: Javascript
   option_1: after 10 second
   option_2: after results are received from the HTTP request
   option_3: after 10000 seconds
   option_4: immediately
-  question: "You\u2019ve written the code shown to log a set of consecutive values,\
-    \ but it instead results in the value 5, 5, 5, and 5 being logged to the console.\
-    \ Which revised version of the code would result in the value 1, 2, 3 and 4 being\
-    \ logged?"
+  question: When would the final statement in the code shown be logged to the console?
+- correct_answer: immediately
+  expertise: Javascript
+  option_1: immediately
+  option_2: after results are received from the HTTP request
+  option_3: after 10 second
+  option_4: after 10,000 seconds
+  question: "When would \u2018results shown\u2019 be logged to the console?"
 - correct_answer: for (var i=1; i<=4; i++) { (function(j) { setTimeout(function(){
     console.log(j); }, j*1000); })(i) }
   expertise: Javascript
@@ -7547,146 +7552,148 @@
     }, j*1000); })(i) }
   option_4: for (var j=1; j<=4; j++) { setTimeout(function() { console.log(j); },
     j*1000); }
-  question: How does a function create a closure?
+  question: "You\u2019ve written the code shown to log a set of consecutive values,\
+    \ but it instead results in the value 5, 5, 5, and 5 being logged to the console.\
+    \ Which revised version of the code would result in the value 1, 2, 3 and 4 being\
+    \ logged?"
 - correct_answer: It returns a reference to a variable in its parent scope.
   expertise: Javascript
   option_1: It reloads the document whenever the value changes.
   option_2: It returns a reference to a variable in its parent scope.
   option_3: It completes execution without returning.
   option_4: It copies a local variable to the global scope.
-  question: Which statement creates a new function called discountPrice?
+  question: How does a function create a closure?
 - correct_answer: let discountPrice = function(price) { return price * 0.85; };
   expertise: Javascript
   option_1: let discountPrice = function(price) { return price * 0.85; };
   option_2: let discountPrice(price) { return price * 0.85; };
   option_3: let function = discountPrice(price) { return price * 0.85; };
   option_4: discountPrice = function(price) { return price * 0.85; };
-  question: What is the result in the console of running the code shown?
+  question: Which statement creates a new function called discountPrice?
 - correct_answer: "\u2018snow\u2019"
   expertise: Javascript
   option_1: Storm()
   option_2: undefined
   option_3: "\u2018rain\u2019"
   option_4: "\u2018snow\u2019"
-  question: You need to match a time value such as 12:00:32. Which of the following
-    regular expressions would work for your code?
+  question: What is the result in the console of running the code shown?
 - correct_answer: /\d\d:\d\d:\d\d/
   expertise: Javascript
   option_1: /[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/
   option_2: /\d\d:\d\d:\d\d/
   option_3: /[0-9]+:[0-9]+:[0-9]+/
   option_4: '/ : : /'
-  question: What is the result in the console of running this code?
+  question: You need to match a time value such as 12:00:32. Which of the following
+    regular expressions would work for your code?
 - correct_answer: "{desc: \u201Clogger\u201D}"
   expertise: Javascript
   option_1: undefined
   option_2: window
   option_3: "{desc: \u201Clogger\u201D}"
   option_4: function
-  question: "How would you reference the text \u2018avenue\u2019 in the code shown?"
+  question: What is the result in the console of running this code?
 - correct_answer: roadTypes[2]
   expertise: Javascript
   option_1: roadTypes.2
   option_2: roadTypes[3]
   option_3: roadTypes.3
   option_4: roadTypes[2]
-  question: What is the result of running this statement?
+  question: "How would you reference the text \u2018avenue\u2019 in the code shown?"
 - correct_answer: "\u2018number\u2019"
   expertise: Javascript
   option_1: "\u2018float\u2019"
   option_2: "\u2018value\u2019"
   option_3: "\u2018number\u2019"
   option_4: "\u2018integer\u2019"
-  question: Which property references the DOM object that dispatched an event?
+  question: What is the result of running this statement?
 - correct_answer: target
   expertise: Javascript
   option_1: self
   option_2: object
   option_3: target
   option_4: source
-  question: "You\u2019re adding error handling to the code shown. Which code would\
-    \ you include within the if statement to specify an error message?"
+  question: Which property references the DOM object that dispatched an event?
 - correct_answer: "throw(\u2018One or both parameters are not numbers\u2019)"
   expertise: Javascript
   option_1: "exception(\u2018One or both parameters are not numbers\u2019)"
   option_2: "catch(\u2018One or both parameters are not numbers\u2019)"
   option_3: "error(\u2018One or both parameters are not numbers\u2019)"
   option_4: "throw(\u2018One or both parameters are not numbers\u2019)"
-  question: Which method converts JSON data to a JavaScript object?
+  question: "You\u2019re adding error handling to the code shown. Which code would\
+    \ you include within the if statement to specify an error message?"
 - correct_answer: JSON.parse()
   expertise: Javascript
   option_1: JSON.fromString();
   option_2: JSON.parse()
   option_3: JSON.toObject()
   option_4: JSON.stringify()
-  question: When would you use a conditional statement?
+  question: Which method converts JSON data to a JavaScript object?
 - correct_answer: When you want your code to choose between multiple options.
   expertise: Javascript
   option_1: When you want to reuse a set of statements multiple times.
   option_2: When you want your code to choose between multiple options.
   option_3: When you want to group data together.
   option_4: When you want to loop through a group of statement.
-  question: What would be the result in the console of running this code?
+  question: When would you use a conditional statement?
 - correct_answer: '01234'
   expertise: Javascript
   option_1: '12345'
   option_2: '1234'
   option_3: '01234'
   option_4: '012345'
-  question: Which Object method returns an iterable that can be used to iterate over
-    the properties of an object?
+  question: What would be the result in the console of running this code?
 - correct_answer: Object.keys()
   expertise: Javascript
   option_1: Object.get()
   option_2: Object.loop()
   option_3: Object.each()
   option_4: Object.keys()
-  question: After the following code, what is the value of a.length?
+  question: Which Object method returns an iterable that can be used to iterate over
+    the properties of an object?
 - correct_answer: '101'
   expertise: Javascript
   option_1: '101'
   option_2: '3'
   option_3: '4'
   option_4: '100'
-  question: What is one difference between collections created with Map and collections
-    created with Object?
+  question: After the following code, what is the value of a.length?
 - correct_answer: You can count the records in a Map with a single method call.
   expertise: Javascript
   option_1: You can iterate over values in a Map in their insertion order.
   option_2: You can count the records in a Map with a single method call.
   option_3: Keys in Maps can be strings.
   option_4: You can access values in a Map without iterating over the whole collection.
-  question: What is the value of dessert.type after executing this code?
+  question: What is one difference between collections created with Map and collections
+    created with Object?
 - correct_answer: pudding
   expertise: Javascript
   option_1: pie
   option_2: The code will throw an error.
   option_3: pudding
   option_4: undefined
-  question: 0 && hi
+  question: What is the value of dessert.type after executing this code?
 - correct_answer: '0'
   expertise: Javascript
   option_1: ReferenceError
   option_2: 'True'
   option_3: '0'
   option_4: 'false'
-  question: Which of the following operators can be used to do a short-circuit evaluation?
+  question: 0 && hi
 - correct_answer: '||'
   expertise: Javascript
   option_1: ++
   option_2: --
   option_3: ==
   option_4: '||'
-  question: Which statement sets the Person constructor as the parent of the Student
-    constructor in the prototype chain?
+  question: Which of the following operators can be used to do a short-circuit evaluation?
 - correct_answer: Student.prototype = new Person();
   expertise: Javascript
   option_1: Student.parent = Person;
   option_2: Student.prototype = new Person();
   option_3: Student.prototype = Person;
   option_4: Student.prototype = Person();
-  question: "Why would you include a \u201Cuse strict\u201D statement in a JavaScript\
-    \ file?"
+  question: Which statement sets the Person constructor as the parent of the Student
+    constructor in the prototype chain?
 - correct_answer: to tell parsers to enforce all JavaScript syntax rules when processing
     your code
   expertise: Javascript
@@ -7696,52 +7703,52 @@
   option_3: to instruct the browser to automatically fix any errors it finds in the
     code
   option_4: to enable ES6 features in your code
-  question: Which Variable-defining keyword allows its variable to be accessed (as
-    undefined) before the line that defines it?
+  question: "Why would you include a \u201Cuse strict\u201D statement in a JavaScript\
+    \ file?"
 - correct_answer: var
   expertise: Javascript
   option_1: all of them
   option_2: const
   option_3: var
   option_4: let
-  question: Which of the following values is not a Boolean false?
+  question: Which Variable-defining keyword allows its variable to be accessed (as
+    undefined) before the line that defines it?
 - correct_answer: "Boolean(\u201Cfalse\u201D)"
   expertise: Javascript
   option_1: Boolean(0)
   option_2: "Boolean(\u201C\u201D)"
   option_3: Boolean(NaN)
   option_4: "Boolean(\u201Cfalse\u201D)"
-  question: Which of the following is not a keyword in JavaScript?
+  question: Which of the following values is not a Boolean false?
 - correct_answer: array
   expertise: Javascript
   option_1: this
   option_2: catch
   option_3: function
   option_4: array
-  question: Which variable is an implicit parameter for every function in JavaScript?
+  question: Which of the following is not a keyword in JavaScript?
 - correct_answer: Arguments
   expertise: Javascript
   option_1: Arguments
   option_2: args
   option_3: argsArray
   option_4: argumentsList
-  question: For the following class, how do you get the value of 42 from an instance
-    of X?
+  question: Which variable is an implicit parameter for every function in JavaScript?
 - correct_answer: x.Y
   expertise: Javascript
   option_1: "x.get(\u2018Y\u2019)"
   option_2: x.Y
   option_3: x.Y()
   option_4: x.get().Y
-  question: What is the result of running this code?
+  question: For the following class, how do you get the value of 42 from an instance
+    of X?
 - correct_answer: 30, ReferenceError
   expertise: Javascript
   option_1: 30, ReferenceError, 30, -10
   option_2: 30, ReferenceError
   option_3: 30, -10
   option_4: ReferenceError, -10
-  question: Why is it usually better to work with Objects instead of Arrays to store
-    a collection of records?
+  question: What is the result of running this code?
 - correct_answer: Most operations involve looking up a record, and objects can do
     that better than arrays.
   expertise: Javascript
@@ -7751,8 +7758,8 @@
   option_3: Most operations involve looking up a record, and objects can do that better
     than arrays.
   option_4: Working with objects makes the code more readable.
-  question: "Which statement is true about the \u201Casync\u201D attribute for the\
-    \ HTML script tag?"
+  question: Why is it usually better to work with Objects instead of Arrays to store
+    a collection of records?
 - correct_answer: It can be used only for external JavaScript code.
   expertise: Javascript
   option_1: It can be used for both internal and external JavaScript code.
@@ -7760,45 +7767,45 @@
   option_3: It can be used only for internal or external JavaScript code that exports
     a promise.
   option_4: It can be used only for external JavaScript code.
-  question: "How do you import the lodash library making it top-level Api available\
-    \ as the \u201C_\u201D variable?"
+  question: "Which statement is true about the \u201Casync\u201D attribute for the\
+    \ HTML script tag?"
 - correct_answer: "import _ from \u2018lodash\u2019;"
   expertise: Javascript
   option_1: "import _ from \u2018lodash\u2019;"
   option_2: "import \u2018lodash\u2019 as _;"
   option_3: "import \u2018_\u2019 from \u2018lodash;"
   option_4: "import lodash as _ from \u2018lodash\u2019;"
-  question: What does the following expression evaluate to?
+  question: "How do you import the lodash library making it top-level Api available\
+    \ as the \u201C_\u201D variable?"
 - correct_answer: 'False'
   expertise: Javascript
   option_1: 'True'
   option_2: undefined
   option_3: '[]'
   option_4: 'False'
-  question: What is the name of a function whose execution can be suspended and resumed
-    at a later point?
+  question: What does the following expression evaluate to?
 - correct_answer: Generator function
   expertise: Javascript
   option_1: Generator function
   option_2: Arrow function
   option_3: Async/ Await function
   option_4: Promise function
-  question: What will this code print?
+  question: What is the name of a function whose execution can be suspended and resumed
+    at a later point?
 - correct_answer: '1'
   expertise: Javascript
   option_1: '2'
   option_2: '1'
-  option_3: "Nothing\u2013this code will throw an error."
+  option_3: Nothing - this code will throw an error.
   option_4: undefined
-  question: Which statement is true about Functional Programming?
+  question: What will this code print?
 - correct_answer: Side effects are not allowed.
   expertise: Javascript
   option_1: Every object in the program has to be a function.
   option_2: Code is grouped with the state it modifies.
   option_3: Date fields and methods are kept in units.
   option_4: Side effects are not allowed.
-  question: "Your code is producing the error: TypeError: Cannot read property \u2018\
-    reduce\u2019 of undefined. What does that mean?"
+  question: Which statement is true about Functional Programming?
 - correct_answer: You are calling a method named reduce on an object that does not
     exist.
   expertise: Javascript
@@ -7808,107 +7815,115 @@
   option_3: You are calling a method named reduce on an empty array.
   option_4: "You are calling a method named reduce on an object that\u2019s has a\
     \ null value."
-  question: How many prototype objects are in the chain for the following array?
+  question: "Your code is producing the error: TypeError: Cannot read property \u2018\
+    reduce\u2019 of undefined. What does that mean?"
 - correct_answer: '0'
   expertise: Javascript
   option_1: '3'
   option_2: '2'
   option_3: '0'
   option_4: '1'
-  question: Which of the following is not a unary operator?
+  question: How many prototype objects are in the chain for the following array?
 - correct_answer: instanceof
   expertise: Javascript
   option_1: typeof
   option_2: delete
   option_3: instanceof
   option_4: void
-  question: What type of scope does the end variable have in the code shown?
+  question: Which of the following is not a unary operator?
 - correct_answer: block
   expertise: Javascript
   option_1: conditional
   option_2: block
   option_3: global
   option_4: function
-  question: 'What will the value of y be in this code:'
+  question: Which choice is not a unary operator?
 - correct_answer: Two
   expertise: Javascript
   option_1: One
   option_2: undefined
   option_3: 'TRUE'
   option_4: Two
-  question: Which keyword is used to create an error?
+  question: What type of scope does the end variable have in the code shown?
 - correct_answer: throw
   expertise: Javascript
   option_1: throw
   option_2: exception
   option_3: catch
   option_4: error
-  question: "What\u2019s one difference between the async and defer attributes of\
-    \ the HTML script tag?"
+  question: 'What will the value of y be in this code:'
 - correct_answer: The defer attribute will asynchronously load the scripts in order.
   expertise: Javascript
   option_1: The defer attribute can work synchronously.
   option_2: The defer attribute works only with generators.
   option_3: The defer attribute works only with promises.
   option_4: The defer attribute will asynchronously load the scripts in order.
-  question: The following program has a problem. What is it?
+  question: Which keyword is used to create an error?
 - correct_answer: The condition in the ternary is using the assignment operator.
   expertise: Javascript
   option_1: The condition in the ternary is using the assignment operator.
   option_2: "You can\u2019t define a variable without initializing it."
   option_3: "You can\u2019t use a ternary in the right-hand side of an assignment\
     \ operator."
-  option_4: The code is using the deprecated var keyword
-  question: Which statement references the DOM node created by the code shown?
+  option_4: The code is using the deprecated var keyword.
+  question: "What\u2019s one difference between the async and defer attributes of\
+    \ the HTML script tag?"
+- correct_answer: The condition in the ternary statement is using the assignment operator.
+  expertise: Javascript
+  option_1: You cannot use a ternary operator in the right-hand side of an assignment.
+  option_2: You cannot define a variable without initializing it first.
+  option_3: The condition in the ternary statement is using the assignment operator.
+  option_4: The code is using the deprecated var keyword.
+  question: The following program has a problem. What is it?
 - correct_answer: document.querySelector('.pull');
   expertise: Javascript
   option_1: Document.querySelector('class.pull')
   option_2: document.querySelector('.pull');
   option_3: Document.querySelector('pull')
   option_4: Document.querySelector('#pull')
-  question: What value does the code return?
-- expertise: Javascript
+  question: This program has a problem. What is it?
+- correct_answer: '10'
+  expertise: Javascript
   option_1: '10'
-  option_2: 'false'
-  option_3: '0'
-  question: "For the following class, how do you get the value of 42 from \u201CX\u201D\
-    \ ?"
+  option_2: 'true'
+  option_3: 'false'
+  option_4: '0'
+  question: Which statement references the DOM node created by the code shown?
 - correct_answer: ReferenceError
   expertise: Javascript
   option_1: '10'
   option_2: '0'
   option_3: ReferenceError
   option_4: undefined
-  question: How does the forEach() method differ from a for statement?
+  question: What value does this code return?
 - correct_answer: an object with a constructor property
   expertise: Javascript
   option_1: undefined
   option_2: "\u201Chello\u201D"
   option_3: an object with a constructor property
   option_4: an error message
-  question: What will be logged to the console?
+  question: What is the result in the console of running the code shown?
 - correct_answer: Set
   expertise: Javascript
   option_1: Object
   option_2: Set
   option_3: Array
   option_4: Map
-  question: Which choice is an incorrect way to define an arrow function that returns
-    an empty object?
+  question: What will this code log in the console?
 - correct_answer: undefined the undefined
   expertise: Javascript
   option_1: 1 then 1
   option_2: 1 then undefined
   option_3: undefined the undefined
   option_4: undefined the 1
-  question: Why might you choose to make your code asynchronous?
+  question: Which collection object allows unique value to be inserted only once?
 - correct_answer: x.Y
   expertise: Javascript
   option_1: x.Y
   option_2: x.Y()
   option_3: "x.get(\u2018Y\u2019)"
   option_4: x.get().Y
-  question: Which expression evaluates to true?
+  question: What two values will this code print?
 - correct_answer: forEach can be used only with an array, whereas for can be used
     with additional data types.
   expertise: Javascript
@@ -7918,21 +7933,22 @@
   option_3: forEach can be used only with an array, whereas for can be used with additional
     data types.
   option_4: for loops can be nested; whereas forEach loops cannot.
-  question: Which choice is a valid variable name?
+  question: "For the following class, how do you get the value of 42 from \u201CX\u201D\
+    \ ?"
 - correct_answer: "{desc: \u201Clogger\u201D}"
   expertise: Javascript
   option_1: undefined
   option_2: function
   option_3: windows
   option_4: "{desc: \u201Clogger\u201D}"
-  question: Which method cancels event default behavior?
+  question: How does the forEach() method differ from a for statement?
 - correct_answer: => {}
   expertise: Javascript
   option_1: => ({})
   option_2: => {}
   option_3: => { return {};}
   option_4: => (({}))
-  question: Which method do you use to attach one DOM node to another?
+  question: What will be logged to the console?
 - correct_answer: to ensure that tasks further down in your code are not initiated
     until earlier tasks have completed
   expertise: Javascript
@@ -7942,44 +7958,144 @@
     earlier tasks have completed
   option_3: to make your code faster
   option_4: to ensure that the call stack maintains a LIFO (Last in, First Out) structure
-  question: Which statement is used to skip iteration of the loop?
+  question: Which choice is an incorrect way to define an arrow function that returns
+    an empty object?
 - correct_answer: "3 == \u20183\u2019"
   expertise: Javascript
   option_1: '[3] == [3]'
   option_2: "3 == \u20183\u2019"
   option_3: "3 != \u20183\u2019"
   option_4: "3 === \u20183\u2019"
-  question: Which choice is valid example for an arrow function?
+  question: Why might you choose to make your code asynchronous?
 - correct_answer: firstName
   expertise: Javascript
   option_1: 5thItem
   option_2: firstName
   option_3: grand total
   option_4: function
-  question: Which concept is defined as a template that can be used to generate different
-    objects that share some shape and/or behavior?
+  question: Which expression evaluates to true?
 - correct_answer: preventDefault()
   expertise: Javascript
   option_1: cancel()
   option_2: stop()
   option_3: preventDefault()
   option_4: prevent()
-  question: How do you add a comment to JavaScript code?
+  question: Which choice is a valid variable name?
 - correct_answer: appendChild()
   expertise: Javascript
   option_1: attachNode()
   option_2: getNode()
   option_3: querySelector()
   option_4: appendChild()
-  question: If you attempt to call a value as a function but the value is not a function,
-    what kind of error would you get?
+  question: Which of these is a valid variable name?
 - correct_answer: continue
   expertise: Javascript
   option_1: break
   option_2: pass
   option_3: skip
   option_4: continue
+  question: Which method cancels event default behavior?
+- correct_answer: (a,b) => c
+  expertise: Javascript
+  option_1: (a,b) => c
+  option_2: a, b => {return c;}
+  option_3: a, b => c
+  option_4: '{ a, b } => c'
+  question: Which method do you use to attach one DOM node to another?
+- correct_answer: class
+  expertise: Javascript
+  option_1: class
+  option_2: generator function
+  option_3: map
+  option_4: proxy
+  question: Which statement is used to skip iteration of the loop?
+- correct_answer: // This is a comment
+  expertise: Javascript
+  option_1: '! This is a comment'
+  option_2: '# This is a comment'
+  option_3: \ This is a comment
+  option_4: // This is a comment
+  question: Which choice is valid example for an arrow function?
+- correct_answer: TypeError
+  expertise: Javascript
+  option_1: TypeError
+  option_2: SystemError
+  option_3: SyntaxError
+  option_4: LogicError
+  question: Which concept is defined as a template that can be used to generate different
+    objects that share some shape and/or behavior?
+- correct_answer: constructor()
+  expertise: Javascript
+  option_1: create()
+  option_2: new()
+  option_3: constructor()
+  option_4: init()
+  question: How do you add a comment to JavaScript code?
+- correct_answer: '6'
+  expertise: Javascript
+  option_1: '4'
+  option_2: '10'
+  option_3: '6'
+  option_4: '5'
+  question: If you attempt to call a value as a function but the value is not a function,
+    what kind of error would you get?
+- correct_answer: e.preventDefault();
+  expertise: Javascript
+  option_1: e.blockReload();
+  option_2: button.preventDefault();
+  option_3: button.blockReload();
+  option_4: e.preventDefault();
   question: Which method is called automatically when an object is initialized?
+- expertise: Javascript
+  option_1: function() { console.log('lorem ipsum'); }()();
+  option_2: function() { console.log('lorem ipsum'); }();
+  option_3: (function() { console.log('lorem ipsum'); })();
+  question: What is the result of running the statement shown?
+- correct_answer: Document.querySelectorAll('img')
+  expertise: Javascript
+  option_1: Document.querySelector('img')
+  option_2: Document.querySelectorAll('<img>')
+  option_3: Document.querySelectorAll('img')
+  option_4: Document.querySelector('<img>')
+  question: "You\u2019ve written the event listener shown below for a form button,\
+    \ but each time you cklick the button, the page reloads. Which statement would\
+    \ stop this from happening?"
+- correct_answer: "To ensure that tasks further down in your code aren\u2019t initiated\
+    \ until earlier tasks have completed"
+  expertise: Javascript
+  option_1: To use ES6 syntax
+  option_2: To start tasks that might take some time without blocking subsequent tasks
+    from executing immediately
+  option_3: To ensure that parsers enforce all JavaScript syntax rules when processing
+    your code
+  option_4: "To ensure that tasks further down in your code aren\u2019t initiated\
+    \ until earlier tasks have completed"
+  question: Which statement represents the starting code converted to an IIFE?
+- correct_answer: GET
+  expertise: Javascript
+  option_1: DELETE
+  option_2: GET
+  option_3: PATCH
+  option_4: POST
+  question: Which statement selects all img elements in the DOM tree?
+- correct_answer: focus
+  expertise: Javascript
+  option_1: focus
+  option_2: blur
+  option_3: hover
+  option_4: enter
+  question: Why would you choose an asynchronous structure for your code?
+- expertise: Javascript
+  option_1: function
+  option_2: undefined
+  option_3: Function.prototype
+  option_4: window
+  question: What is the HTTP verb to request the contents of an existing resource?
+- expertise: Javascript
+  question: Which event is fired on a text field within a form when a user tabs to
+    it, or clicks or touches it?
+- expertise: Javascript
+  question: What is the result in the console of running this code?
 - expertise: Jquery
   question: "What\u2019s the difference between these two snippets?"
 - correct_answer: Nothing .click(function) is shorter way to write .on('click', function).
