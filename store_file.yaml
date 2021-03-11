@@ -14157,7 +14157,8 @@
   option_4: allPlansExecution mode
   question: What is the correct query to find all of the people who have a home phone
     number defined?
-- expertise: Mongodb
+- correct_answer: 'db.person.find({homePhone: {$exists: true}});'
+  expertise: Mongodb
   option_1: 'db.person.find({exists: ''homePhone''});'
   option_2: 'db.person.exists({homePhone: true});'
   option_3: 'db.person.find({homePhone: {$exists: true}});'
