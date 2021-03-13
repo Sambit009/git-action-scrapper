@@ -12668,6 +12668,33 @@
   question: Which feature in the Power BI service is most useful when you need to
     create pages that present the same visualizations for different territories, salespeople,
     or teams?
+- expertise: Microsoft-power-bi
+  option_1: landscape mode
+  option_2: none of these answers
+  option_3: Shrink to Fit
+  option_4: templates
+  question: What should you use to highlight a specific visualization in a report?
+- expertise: Microsoft-power-bi
+  option_1: Spotlight
+  option_2: Highlight
+  option_3: Magnify
+  option_4: None of the answers
+  question: What does My Workspace on powerbi.com include?
+- expertise: Microsoft-power-bi
+  option_1: Visualizations and a fields list
+  option_2: Toolbars and preferences
+  option_3: Workbooks and visualizations
+  option_4: Dashboards and reports
+  question: You want to access the underlying data for a specific data point in a
+    visualization. What should you choose?
+- expertise: Microsoft-power-bi
+  option_1: Drill up
+  option_2: Drill down
+  option_3: Expand to next level
+  option_4: Collapse
+  question: You have a treemap visualization that groups by sales territory. To allow
+    users to further analyze data for a specific territory, what filter should you
+    apply?
 - expertise: Microsoft-power-point
   question: When you create a new, blank presentation, you begin with one blank slide.
     What is the layout name of this slide?
