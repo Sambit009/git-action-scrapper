@@ -3,8 +3,7 @@ import re
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen as req
 import yaml
-from django.core.files import File
-from tempfile import NamedTemporaryFile
+
 
 def get_urls():
     req_url = "https://ebazhanov.github.io/linkedin-skill-assessments-quizzes/"
